@@ -409,7 +409,7 @@ a:hover {
 
 .hero-image-wrap img {
   width: 100%;
-  aspect-ratio: 5/6;
+  aspect-ratio: 1;
   object-fit: cover;
 }
 
@@ -475,6 +475,86 @@ a:hover {
   margin: 0;
   max-width: 52ch;
   margin-inline: auto;
+}
+
+.mission-split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(2rem, 4vw, 3.5rem);
+  align-items: center;
+}
+
+.mission-visual {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+}
+
+.mission-visual img {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  display: block;
+}
+
+.mission-content .section-title {
+  text-align: left;
+}
+
+.mission-text--split {
+  margin-inline: 0;
+  max-width: 48ch;
+}
+
+@media (max-width: 900px) {
+  .mission-split {
+    grid-template-columns: 1fr;
+  }
+
+  .mission-visual {
+    order: -1;
+    max-width: min(420px, 100%);
+    margin-inline: auto;
+  }
+
+  .mission-content .section-title,
+  .mission-text--split {
+    text-align: center;
+  }
+
+  .mission-text--split {
+    margin-inline: auto;
+  }
+}
+
+.download-showcase {
+  background: linear-gradient(180deg, var(--surface-2) 0%, var(--surface) 100%);
+}
+
+.download-lead {
+  max-width: 44ch;
+  margin: 0 auto 1.75rem;
+}
+
+.download-showcase-frame {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+  max-width: 1000px;
+  margin-inline: auto;
+  background: var(--ink);
+  border: 1px solid rgba(15, 20, 25, 0.08);
+}
+
+.download-showcase-frame img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.store-badges--center {
+  justify-content: center;
+  margin-top: 2rem;
 }
 
 .brand-word {
