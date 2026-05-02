@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Partner with Grabbit — list surprise bags and offers, reach new customers, and grow your local business." />
+  <title>Sign up your business — Grabbit</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body class="page-business">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="top">
+    <div class="header-inner">
+      <a class="brand" href="index.html" aria-label="Grabbit home">
+        <img src="assets/logo.png" alt="" width="240" height="80" class="brand-logo" />
+      </a>
+      <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="site-nav" id="nav-toggle">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="visually-hidden">Menu</span>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="Primary">
+        <ul class="nav-list">
+          <li><a href="index.html#how-it-works">How it works</a></li>
+          <li><a href="index.html#why-grabbit">Why Grabbit</a></li>
+          <li><a href="index.html#for-business">For business</a></li>
+          <li><a href="business.html" class="btn btn-nav" aria-current="page">Sign up your business</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="business-hero section">
+      <div class="container business-hero-grid">
+        <div class="business-hero-copy reveal">
+          <p class="eyebrow">Partner with us</p>
+          <h1>List offers. Reach new customers.</h1>
+          <p class="lead">
+            Tell us about your business and we’ll get back to you with next steps to join Grabbit — built for busy teams who want more footfall and fuller tills.
+          </p>
+          <ul class="check-list">
+            <li>Turn end-of-day favourites into extra sales</li>
+            <li>Simple tools for surprise bags, pickup and delivery windows</li>
+            <li>Reach locals who love discovering new spots and great value</li>
+          </ul>
+        </div>
+        <div class="business-hero-img reveal reveal-delay-1">
+          <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=800&q=80" alt="Welcoming café counter with fresh food" width="800" height="600" loading="eager" />
+        </div>
+      </div>
+    </section>
+
+    <section class="form-section section">
+      <div class="container form-layout">
+        <div class="form-intro reveal">
+          <h2>Business signup</h2>
+          <p>Complete the form below. Your details are sent securely to our team. We typically reply within 2–3 business days.</p>
+        </div>
+
+        <!-- FormSubmit: delivers to admin inbox. Confirm email on first use at formsubmit.co -->
+        <form
+          class="business-form card-form reveal"
+          id="business-form"
+          action="https://formsubmit.co/dagitesh2188@gmail.com"
+          method="POST"
+        >
+          <input type="hidden" name="_subject" value="New Grabbit business signup" />
+          <input type="hidden" name="_next" value="thank-you.html" />
+          <input type="hidden" name="_template" value="table" />
+          <input type="text" name="_gotcha" class="visually-hidden" tabindex="-1" autocomplete="off" aria-hidden="true" />
+
+          <div class="form-row two">
+            <label class="field">
+              <span>Business name <abbr title="required">*</abbr></span>
+              <input type="text" name="business_name" required autocomplete="organization" placeholder="e.g. Sunrise Bakery" />
+            </label>
+            <label class="field">
+              <span>Business type <abbr title="required">*</abbr></span>
+              <select name="business_type" required>
+                <option value="" disabled selected>Select type</option>
+                <option value="Restaurant">Restaurant</option>
+                <option value="Café / coffee shop">Café / coffee shop</option>
+                <option value="Bakery">Bakery</option>
+                <option value="Grocery / supermarket">Grocery / supermarket</option>
+                <option value="Hotel / catering">Hotel / catering</option>
+                <option value="Other">Other</option>
+              </select>
+            </label>
+          </div>
+
+          <div class="form-row two">
+            <label class="field">
+              <span>Contact name <abbr title="required">*</abbr></span>
+              <input type="text" name="contact_name" required autocomplete="name" placeholder="Your full name" />
+            </label>
+            <label class="field">
+              <span>Job title</span>
+              <input type="text" name="job_title" autocomplete="organization-title" placeholder="e.g. Owner, Manager" />
+            </label>
+          </div>
+
+          <div class="form-row two">
+            <label class="field">
+              <span>Email <abbr title="required">*</abbr></span>
+              <input type="email" name="email" required autocomplete="email" placeholder="you@business.com" />
+            </label>
+            <label class="field">
+              <span>Phone <abbr title="required">*</abbr></span>
+              <input type="tel" name="phone" required autocomplete="tel" placeholder="+251" />
+            </label>
+          </div>
+
+          <label class="field">
+            <span>Business address <abbr title="required">*</abbr></span>
+            <textarea name="address" required rows="3" placeholder="Subcity, city"></textarea>
+          </label>
+
+          <div class="form-row two">
+            <label class="field">
+              <span>Website</span>
+              <input type="url" name="website" autocomplete="url" placeholder="https://" />
+            </label>
+            <label class="field">
+              <span>Approx. listings per week</span>
+              <select name="listing_volume">
+                <option value="" disabled selected>Optional</option>
+                <option value="Small (under 10 per week)">Small (under 10 per week)</option>
+                <option value="Medium (10–50 per week)">Medium (10–50 per week)</option>
+                <option value="Large (50+ per week)">Large (50+ per week)</option>
+              </select>
+            </label>
+          </div>
+
+          <label class="field">
+            <span>Anything else we should know?</span>
+            <textarea name="message" rows="4" placeholder="Pickup constraints, dietary info, partnership questions…"></textarea>
+          </label>
+
+          <label class="field checkbox-field">
+            <input type="checkbox" name="consent" value="yes" required />
+            <span>I agree that Grabbit may contact me about this enquiry. <abbr title="required">*</abbr></span>
+          </label>
+
+          <div class="form-actions">
+            <button type="submit" class="btn btn-primary btn-lg" id="submit-btn">
+              <span class="btn-text">Submit application</span>
+              <span class="btn-loading" hidden>Sending…</span>
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <img src="assets/logo.png" alt="Grabbit" width="200" height="64" class="footer-logo" />
+        <p>Great food, smarter prices. Support locals you love.</p>
+      </div>
+      <div class="footer-links">
+        <h3 class="footer-heading">Explore</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#how-it-works">How it works</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p>© <span id="year"></span> Grabbit.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
