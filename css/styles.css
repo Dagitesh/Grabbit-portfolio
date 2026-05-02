@@ -142,9 +142,9 @@ a:hover {
 }
 
 .brand-logo {
-  height: clamp(3.25rem, 5vw, 4.25rem);
+  height: clamp(2.5rem, 4.2vw, 3.25rem);
   width: auto;
-  max-width: min(280px, 55vw);
+  max-width: min(380px, 88vw);
   object-fit: contain;
 }
 
@@ -802,9 +802,9 @@ a:hover {
 }
 
 .footer-logo {
-  height: clamp(2.75rem, 4vw, 3.5rem);
+  height: clamp(2.25rem, 3.5vw, 2.85rem);
   width: auto;
-  max-width: 220px;
+  max-width: min(300px, 85vw);
   margin-bottom: 0.75rem;
 }
 
